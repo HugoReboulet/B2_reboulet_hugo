@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import react, {useState} from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  const [name, setName] = useState('TOTO')
+  // trois ligne du dessous = ligne du dessus grtace au array destructuring
+  // const nomdemonhook = usestate('string')
+  // const name = nomdemonhook[0]
+  // const setName = nomdemonhook [1]
+
+function handleChange(evt) {
+  setName(evt.target.value)
+  console.log(evt)
 }
 
-export default App;
+  return (
+    <div>
+    Hello {name}
+    <h1>My name is {name}</h1>
+    {/* le fait de ne pas mettre de parenthese a handlechange fait que la fonction n'est pas appeler au rendering */}
+    <input type="text" value={name} onChange={handleChange}/>
+    </div>
+  )
+}
+
+export default App 
