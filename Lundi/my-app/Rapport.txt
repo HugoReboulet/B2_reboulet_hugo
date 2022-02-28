@@ -1,0 +1,6 @@
+1) creation de repot git avec un projet react vierge
+2) fichier gitignore permet de ne pas push les dépendance du dossier my app
+
+3) "git add" ajoute le fichier selectionner a la liste des fichier a push (option -A ajoute tout les fichier untracked)
+4) "git commit -m" ajoute entre guillement le nom que l'on veut donner au push qui suit
+5) "git push" ajoute les fichiers suivit sur le repot github 

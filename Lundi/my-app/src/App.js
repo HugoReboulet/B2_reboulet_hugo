@@ -12,6 +12,14 @@ function handleChange(evt) {
   console.log(evt)
 }
 
+// nous allons decouvrir 3 hooks
+  // useState
+  // useEffect
+    // remplace componentDiMont et componentDidUpdate et compponentWillUnMount
+  // useContext
+    // usestate a l'echelle global de l'application
+
+    
   return (
     <div>
     Hello {name}
